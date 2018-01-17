@@ -16,7 +16,7 @@
         margin: 0;
       }
 
-      #container img {
+      #darwishism-post {
         max-width: 100%;
         max-height: 100%;
         position: absolute;
@@ -24,12 +24,34 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+
+      #avatar {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 50px;
+        background: url('avatar.jpg');
+        background-size: contain;
+        border-radius: 25%;
+        border: 2px solid #b29a68;
+      }
+
+      #translation-box {
+        position: absolute;
+        bottom: 30%;
+        width: 100%;
+        text-align: center;
+      }
     </style>
   </head>
 
   <body>
     <div id="container">
       <img id="darwishism-post" />
+      <a href="https://darwishism.tumblr.com" target="_blank" id="avatar"></a>
+      <div id="translation-box"></div>
     </div>
     <script src="new_tab.js"></script>
   </body>

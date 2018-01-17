@@ -4,11 +4,11 @@ xhr.open('GET', 'https://api.tumblr.com/v2/blog/darwishism.tumblr.com/posts/phot
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
   if (xhr.status === 200) {
-    var images = JSON.parse(xhr.responseText).response.posts.map(function(post){
-      return post.photos[0].original_size.url
-    });
-    var imageIndex = Math.floor(Math.random() * images.length)
-    document.getElementById("darwishism-post").src = images[imageIndex];
+    var posts = JSON.parse(xhr.responseText).response.posts
+    var postIndex = Math.floor(Math.random() * posts.length)
+    var post = posts[postIndex]
+    document.getElementById("darwishism-post").src = post.photos[0].original_size.url;
+    document.getElementById("translation-box").innerHTML = post.summary;
   }
 };
 xhr.send();
