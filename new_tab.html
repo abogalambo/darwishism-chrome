@@ -3,6 +3,7 @@
 <html>
   <head>
     <title>New Tab</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i" rel="stylesheet">
     <style type="text/css">
       body {
         margin: 0
@@ -27,7 +28,7 @@
 
       #avatar {
         position: absolute;
-        bottom: 10%;
+        bottom: 15%;
         left: 50%;
         transform: translateX(-50%);
         width: 40px;
@@ -44,9 +45,17 @@
 
       #translation-box {
         position: absolute;
-        bottom: 27%;
-        width: 100%;
         text-align: center;
+        padding: 3px 10px;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        background-color: rgba(0, 0, 0, 0.25);
+        max-width: 40%;
+        font-family: 'PT Serif', serif;
+        font-size: 1.5em;
+        font-style: italic;
       }
     </style>
   </head>
@@ -54,7 +63,7 @@
   <body>
     <div id="container">
       <img id="darwishism-post" />
-      <a href="https://darwishism.tumblr.com" target="_blank" id="avatar"></a>
+      <a href="https://darwishism.tumblr.com" target="_blank" id="avatar" style="display: none;"></a>
       <div id="translation-box"></div>
     </div>
     <script src="new_tab.js"></script>
