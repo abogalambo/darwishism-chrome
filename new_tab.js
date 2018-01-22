@@ -6,7 +6,7 @@ xhr.onload = function() {
   if (xhr.status === 200) {
     var post = JSON.parse(xhr.responseText).response.posts[0]
     document.getElementById("darwishism-post").src = post.photos[0].original_size.url;
-    document.getElementById("translation-box").innerHTML = post.summary;
+    document.getElementById("translation-box").innerHTML = post.caption;
     document.getElementById("avatar").style = {display: ''};
   }
 };
