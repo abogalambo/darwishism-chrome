@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Darwishism",
-  "version": "1.4",
+  "version": "1.4.1",
 
   "description": "This extension replaces the chrome new tab with an image from darwishism.tumblr.com",
 
